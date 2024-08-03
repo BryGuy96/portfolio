@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "prettier"],
+  "rules": {
+    "no-console": "warn",
+    "import/no-duplicates": [
+      "error",
+      {
+        "prefer-inline": true,
+        "considerQueryString": true
+      }
+    ],
+    "spaced-comment": ["warn", "always"],
+    "no-var": "error",
+    "prefer-arrow-callback": "error",
+    "eqeqeq": "error",
+    "guard-for-in": "error",
+    "max-lines": ["error", { "skipBlankLines": true, "skipComments": true }],
+    "no-else-return": "warn",
+    "no-lonely-if": "warn",
+    "prefer-template": "error"
+  }
 }
